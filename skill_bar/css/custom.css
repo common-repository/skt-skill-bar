@@ -1,0 +1,165 @@
+.skt_bar_figure_circle{
+  display: inline-block;
+}
+.skillbar-title span {
+    display: block;
+    background: none;
+    height: 35px;
+}
+.skillbar-title{background: none !important;}
+.skt_skill_bar-graph {
+  padding: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 425px;
+  margin: 0;
+}
+
+.skt_skill_bar-graph li {
+  display: block;
+  padding: 1.5625rem 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 4px 4px 0 0;
+  max-width: 30%;
+  height: 100%;
+  margin: 0 1.8% 0 0;
+  -webkit-flex: 1 1 15%;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+}
+
+.skt_skill_bar-graph .skt_skill_bar-graph-axis {
+  -webkit-flex: 1 1 8%;
+      -ms-flex: 1 1 8%;
+          flex: 1 1 8%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skt_skill_bar-graph .skt_skill_bar-graph-label {
+  margin: 0;
+  background-color: none;
+  color: #8a8a8a;
+  position: relative;
+}
+
+@media print, screen and (min-width: 40em) {
+  .skt_skill_bar-graph .skt_skill_bar-graph-label:before, .skt_skill_bar-graph .skt_skill_bar-graph-label:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed #8a8a8a;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 20%;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 64em) {
+  .skt_skill_bar-graph .skt_skill_bar-graph-label:before, .skt_skill_bar-graph .skt_skill_bar-graph-label:after {
+    width: 30%;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .skt_skill_bar-graph .skt_skill_bar-graph-label:after {
+    left: auto;
+    right: 0;
+  }
+}
+
+.skt_skill_bar-graph .percent {
+  width: 100%;
+  position: absolute;
+}
+
+@media print, screen and (min-width: 40em) {
+  .skt_skill_bar-graph .percent {
+  }
+}
+
+.skt_skill_bar-graph .percent span {
+}
+
+.skt_skill_bar-graph .description {
+  font-weight: 400;
+  width: 100%;
+  font-size: 14px;
+  bottom: 20px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.skt_skill_bar-graph .skt_skill_bar.primary {
+  border: 1px solid #1779ba;
+  background: linear-gradient(#2196e3, #1779ba 70%);
+}
+
+.skt_skill_bar-graph .skt_skill_bar.secondary {
+  border: 1px solid #767676;
+  background: linear-gradient(#909090, #767676 70%);
+}
+
+.skt_skill_bar-graph .skt_skill_bar.success {
+  border: 1px solid #3adb76;
+  background: linear-gradient(#65e394, #3adb76 70%);
+}
+
+.skt_skill_bar-graph .skt_skill_bar.warning {
+  border: 1px solid #ffae00;
+  background: linear-gradient(#ffbe33, #ffae00 70%);
+}
+
+.skt_skill_bar-graph .skt_skill_bar.alert {
+  border: 1px solid #cc4b37;
+  background: linear-gradient(#d67060, #cc4b37 70%);
+}
+
+/*---------------Circle css----------*/
+
+.skt_skill_flex-wrapper{width: 100% !important;}
+.pie-chart {
+  position: relative;
+  width: 400px;
+  margin: 0;
+  outline: 1px solid #ccc;
+}
+.pie-chart:after {
+  content: attr(data-percentage);
+  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  line-height: normal;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 29.938em) {
+#skt_skills_polychart, .linegraphskill{ width:100% !important; height:auto !important;}	
+}
+
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+#skt_skills_polychart, .linegraphskill{ width:100% !important; height:auto !important;}	
+}
